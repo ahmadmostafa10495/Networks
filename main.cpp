@@ -113,9 +113,10 @@ int main()
     int bitNumber;
     while (choice=='c'){
         cout<<"\nPlease Enter the m-bit msg: ";
-        getline(cin,msgTmp);
+        cin>>msgTmp;
+
         cout<<"\nPlease Enter the K-bit Polynomial: ";
-        getline(cin,kTmp);
+        cin>>kTmp;
         intermediateMsg=Generator( msgTmp,kTmp);
 
         cout<<"\nThe generate output is "<<intermediateMsg;
